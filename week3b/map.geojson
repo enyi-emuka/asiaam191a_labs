@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"place":"home","color":"red"},"geometry":{"coordinates":[-118.40650572146909,34.01991138155856],"type":"Point"}},{"type":"Feature","properties":{"place":"Summer Home","color":"blue"},"geometry":{"coordinates":[-118.02009076943952,34.05004106884128],"type":"Point"}}]}
