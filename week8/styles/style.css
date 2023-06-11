@@ -1,0 +1,89 @@
+body {
+    display: grid;
+    grid-auto-rows: 5% auto auto;
+    grid-template-areas: 
+      "header"
+      "main_content"
+      "footer";
+    background-color: beige;
+    gap: 10px;
+  }
+  
+  header {
+    grid-area: header;
+    justify-self: center;
+    align-self: center;
+    text-align: center; /* Center align the header content */
+    font-size: 24px
+  }
+  
+  header h1 {
+    font-size: 24px; /* Adjust the font size of the header title */
+    margin-bottom: 10px; /* Add some spacing between the title and description */
+  }
+  
+  header p {
+    font-size: 16px; /* Adjust the font size of the description text */
+  }
+  
+  
+  #footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  #contents{
+    grid-area: content;
+    display: grid;
+    grid-template-rows: 1fr 3fr; 
+    grid-template-areas: "buttonHome" "survey"
+  }
+  
+  .main {
+    grid-area: main_content;
+    grid-template-columns: 1fr 2fr 0.25fr;
+    grid-template-areas: "main_map content";
+    display: grid;
+    overflow: hidden; /* Hide any potential overflow from the map container */
+  }
+  
+  #the_map {
+    height: 90vh; /* Increase the height of the map container */
+    width: 100%; /* Ensure the map container occupies the full width */
+    grid-area: main_map;
+  }
+  
+  .about-button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-button {
+    padding: 1vw 2vw;
+    margin: 5px;
+    background-color: #eee;
+    border: none;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .about-button:hover {
+    background-color: #ccc;
+  }
+  
+  #theSurvey{
+    grid-area: survey;
+  }
+  
+  #placeForButtons{
+    grid-area: buttonHome;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  

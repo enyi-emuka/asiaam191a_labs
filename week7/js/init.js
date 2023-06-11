@@ -43,8 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log(results);
       results.data.forEach(data => {
         console.log(data);
-        addMarker(data.lat, data.lng, data['name'], data['date'], data['comment']);
-        createButtons(data.lat, data.lng, data['name']); // Call createButtons function
+        addMarker(data.lat, data.lng, data['Name?'], data['Date?'], data['Comments?']);
+        createButtons(data.lat, data.lng, data['Name?']); // Call createButtons function
+        
       });
     }
   
